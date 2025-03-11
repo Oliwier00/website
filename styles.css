@@ -95,8 +95,13 @@ body.dark-mode .island {
 .social-media-buttons {
     margin-top: 70px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-media-buttons .row {
+    display: flex;
+    justify-content: space-between;
     gap: 5px;
 }
 
