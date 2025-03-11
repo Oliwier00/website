@@ -23,14 +23,13 @@ body.dark-mode {
     position: relative;
     width: 300px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* Opaque background */
+    background-color: transparent; /* Transparent background */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, color 0.3s;
+    transition: color 0.3s;
 }
 
 body.dark-mode .island {
-    background-color: rgba(52, 52, 52, 0.9); /* Dark mode opaque background */
     color: #fff;
 }
 
@@ -40,6 +39,7 @@ body.dark-mode .island {
     position: absolute;
     top: 20px;
     left: 20px;
+    border-radius: 10px; /* Rounded edges */
 }
 
 .dark-mode-toggle {
