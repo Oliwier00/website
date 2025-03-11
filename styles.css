@@ -6,6 +6,9 @@ body {
     margin: 0;
     background-color: #f0f0f0;
     transition: background-color 0.3s;
+    background-image: url('path-to-background-image.jpg'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
 }
 
 body.dark-mode {
@@ -20,14 +23,13 @@ body.dark-mode {
     position: relative;
     width: 300px;
     padding: 20px;
-    background-color: #fff;
+    background-color: transparent; /* Remove island background */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s;
+    transition: color 0.3s;
 }
 
 body.dark-mode .island {
-    background-color: #444;
     color: #fff;
 }
 
