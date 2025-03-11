@@ -1,3 +1,4 @@
+/* Base Styles */
 body {
     display: flex;
     justify-content: center;
@@ -6,7 +7,7 @@ body {
     margin: 0;
     background-color: #f0f0f0;
     transition: background-color 0.3s;
-    background-image: url('bg.png'); /* Add your background image here */
+    background-image: url('path-to-background-image.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -19,11 +20,12 @@ body.dark-mode {
     text-align: center;
 }
 
+/* Island Styles */
 .island {
     position: relative;
     width: 300px;
     padding: 20px;
-    background-color: transparent; /* Transparent background */
+    background-color: transparent;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: color 0.3s;
@@ -33,40 +35,18 @@ body.dark-mode .island {
     color: #fff;
 }
 
+/* Image Styles */
 .island-image {
     width: 50px;
     height: 50px;
+    border-radius: 10px;
     position: absolute;
     top: 20px;
     left: 20px;
-    border-radius: 10px; /* Rounded edges */
+    object-fit: cover;
 }
 
-.dark-mode-toggle {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    padding: 10px;
-    cursor: pointer;
-    background-color: #6c757d; /* A neutral color for the toggle button */
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.dark-mode-toggle:hover {
-    background-color: #5a6268;
-}
-
-.social-media-buttons {
-    margin-top: 70px; /* Adjusted to fit the smaller image */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5px;
-}
-
+/* Button Styles */
 .social-button {
     padding: 10px;
     border: none;
@@ -77,7 +57,7 @@ body.dark-mode .island {
 
 .social-button.main {
     width: 100%;
-    background-color: #1da1f2; /* Twitter Blue */
+    background-color: #1da1f2;
     color: #fff;
     font-size: 16px;
 }
@@ -95,4 +75,32 @@ body.dark-mode .island {
 
 .social-button.small:hover {
     background-color: #0056b3;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #6c757d;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.dark-mode-toggle:hover {
+    background-color: #5a6268;
+}
+
+/* Social Media Buttons Layout */
+.social-media-buttons {
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+/* Link Styles */
+.social-link {
+    text-decoration: none;
 }
