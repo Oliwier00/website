@@ -49,21 +49,38 @@ body.dark-mode .island {
 
 .social-media-buttons {
     margin-top: 270px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
 }
 
 .social-button {
-    display: block;
-    width: 100%;
     padding: 10px;
-    margin: 5px 0;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #007bff;
-    color: #fff;
     transition: background-color 0.3s;
 }
 
-.social-button:hover {
+.social-button.main {
+    width: 100%;
+    background-color: #1da1f2; /* Twitter Blue */
+    color: #fff;
+    font-size: 16px;
+}
+
+.social-button.main:hover {
+    background-color: #0d95e8;
+}
+
+.social-button.small {
+    width: 48%;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 14px;
+}
+
+.social-button.small:hover {
     background-color: #0056b3;
 }
