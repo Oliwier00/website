@@ -20,6 +20,17 @@ body.dark-mode {
     text-align: center;
 }
 
+/* Greeting Styles */
+.greeting {
+    font-size: 24px;
+    margin-bottom: 20px;
+    transition: color 0.3s;
+}
+
+body.dark-mode .greeting {
+    color: #fff;
+}
+
 /* Island Styles */
 .island {
     position: relative;
