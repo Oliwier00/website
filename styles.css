@@ -61,6 +61,7 @@ body.dark-mode .island {
 
 /* Button Styles */
 .social-button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -92,6 +93,7 @@ body.dark-mode .island {
 
 /* Dark Mode Toggle */
 .dark-mode-toggle {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: absolute;
     top: 20px;
     right: 20px;
