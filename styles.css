@@ -45,6 +45,15 @@ body.dark-mode .island {
     right: 20px;
     padding: 10px;
     cursor: pointer;
+    background-color: #6c757d; /* A neutral color for the toggle button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.dark-mode-toggle:hover {
+    background-color: #5a6268;
 }
 
 .social-media-buttons {
